@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style>
+<title>Dharma Barber & Tattoo</title>
+<meta name="description" content="Dharma Barber & Tattoo Studio: barbería y estudio de tatuajes en Puerto de la Cruz, Tenerife. C. el Peñón 7. Pide cita.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Rye&display=swap" rel="stylesheet">
+<style>
+/* Layout: misma estructura que Marlin, en papel blanco y grafito; una banda gris oscura por ritmo */
+:root{
+  color-scheme:light;
+  --paper:#ffffff; --paper-2:#f3f4f5; --paper-3:#e7e8ea;
+  --graphite:#1d1f22; --steel:#4a4e54; --ash:#80858c; --silver:#b9bdc2;
+  --line:rgba(29,31,34,.12);
+  --display:Anton,Impact,"Arial Narrow",sans-serif;
+  --body:"DM Sans",system-ui,-apple-system,sans-serif;
+  --script:Rye,Georgia,serif;
+  --r:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--graphite);font-family:var(--body);font-size:17px;line-height:1.6;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:70;background:var(--paper)}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:1272px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.display{font-family:var(--display);text-transform:uppercase;letter-spacing:.01em;line-height:.92;font-weight:400;text-wrap:balance}
+.script{font-family:var(--script)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--steel);font-weight:700}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--graphite)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:999px;font-weight:700;font-size:15px;letter-spacing:.04em;text-transform:uppercase;transition:transform .2s,background .2s,color .2s;cursor:pointer;border:0;font-family:inherit}
+.btn:hover{transform:translateY(-2px)}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:2px solid var(--graphite);outline-offset:3px}
+.btn-dark{background:var(--graphite);color:var(--paper)}
+.btn-dark:hover{background:var(--steel)}
+.btn-ghost{border:1.5px solid var(--graphite);color:var(--graphite);background:transparent}
+.btn-ghost:hover{background:var(--graphite);color:var(--paper)}
+.btn svg{width:18px;height:18px}
+section{padding-block:110px}
+.sec-head{display:grid;gap:18px;margin-bottom:56px;max-width:760px}
+.sec-head h2{font-size:clamp(44px,7vw,88px)}
+.sec-head p{color:var(--steel);font-size:18px;max-width:560px}
+
+/* NAV */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s;padding-top:env(safe-area-inset-top,0px)}
+.draft{background:var(--graphite);color:var(--paper);text-align:center;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 16px}
+.nav.solid{background:rgba(255,255,255,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:78px;gap:20px;position:relative}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{height:60px;width:auto;mix-blend-mode:multiply}
+.brand span{font-family:var(--display);font-size:22px;letter-spacing:.04em}
+.brand small{display:block;font-size:10px;letter-spacing:.3em;color:var(--ash);margin-top:-2px}
+.nav-links{display:flex;gap:30px;font-size:14px;font-weight:500;letter-spacing:.08em;text-transform:uppercase}
+.nav-links a{opacity:.75;transition:opacity .2s}
+.nav-links a:hover{opacity:1}
+.nav-right{display:flex;align-items:center;gap:12px}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;font-size:12px;font-weight:700}
+.lang button{background:none;border:0;color:var(--ash);padding:7px 11px;cursor:pointer;font-family:inherit;letter-spacing:.08em}
+.lang button.on{background:var(--graphite);color:var(--paper)}
+.nav .btn{padding:11px 20px;font-size:13px}
+.burger{display:none;background:none;border:0;color:var(--graphite);cursor:pointer}
+.burger svg{width:28px;height:28px}
+
+/* HERO */
+.hero{padding-block:170px 80px;position:relative;overflow:hidden;background:
+  radial-gradient(ellipse 55% 50% at 78% 45%,var(--paper-2),transparent 70%),var(--paper)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;position:relative}
+.hero h1{font-size:clamp(60px,10vw,148px)}
+.hero h1 em{font-style:normal;color:var(--ash);display:block}
+.hero .script{font-size:clamp(20px,2.2vw,28px);color:var(--steel);margin:8px 0 22px;display:block}
+.hero p{color:var(--steel);font-size:19px;max-width:480px;margin-bottom:34px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px}
+.hero-meta{display:flex;gap:28px;margin-top:44px;flex-wrap:wrap}
+.hero-meta div{border-left:2px solid var(--graphite);padding-left:14px}
+.hero-meta b{display:block;font-family:var(--display);font-size:30px;font-weight:400;letter-spacing:.02em}
+.hero-meta span{font-size:13px;color:var(--ash);text-transform:uppercase;letter-spacing:.12em}
+
+/* barber pole */
+.pole-stage{position:relative;height:600px;display:grid;place-items:center}
+.pole{position:relative;width:118px;height:460px;display:flex;flex-direction:column;align-items:center;filter:drop-shadow(0 30px 40px rgba(29,31,34,.18))}
+.cap{width:150px;height:34px;border-radius:12px;background:linear-gradient(180deg,#d9dbde,#9fa4aa 55%,#6c7177);position:relative}
+.cap::after{content:"";position:absolute;left:50%;top:-30px;transform:translateX(-50%);width:62px;height:62px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,#c6c9cd 45%,#7b8086)}
+.cap.bot{border-radius:12px}
+.cap.bot::after{display:none}
+.glass{flex:1;width:100%;border-radius:4px;overflow:hidden;position:relative;background:var(--paper);border-inline:3px solid #c6c9cd}
+.glass::before{content:"";position:absolute;inset:-120px 0 0;background:repeating-linear-gradient(-35deg,var(--graphite) 0 22px,var(--paper) 22px 44px,var(--silver) 44px 66px,var(--paper) 66px 88px);animation:stripe 3.2s linear infinite}
+.glass::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.55),transparent 35%,transparent 65%,rgba(0,0,0,.18))}
+@keyframes stripe{to{transform:translateY(107.4px)}}
+.badge{position:absolute;right:2%;bottom:8%;width:156px;height:156px;border-radius:50%;background:var(--graphite);color:var(--paper);display:grid;place-items:center;text-align:center;box-shadow:0 20px 40px rgba(29,31,34,.25)}
+.badge svg.ring{position:absolute;inset:0;animation:spin 18s linear infinite}
+.badge b{font-family:var(--display);font-size:20px;font-weight:400;line-height:1}
+.badge small{display:block;font-size:11px;letter-spacing:.2em;color:var(--silver);margin-top:4px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.stars-chip{position:absolute;left:4%;top:12%;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:14px 18px;box-shadow:0 18px 30px rgba(29,31,34,.08);transform:rotate(-4deg)}
+.stars-chip b{font-family:var(--display);font-size:34px;font-weight:400;line-height:1}
+.stars-chip i{font-style:normal;letter-spacing:2px;color:var(--graphite)}
+.stars-chip span{display:block;font-size:12px;color:var(--ash);letter-spacing:.08em;text-transform:uppercase}
+
+/* MARQUEE */
+.marquee{background:var(--graphite);color:var(--paper);padding-block:20px;overflow:hidden;transform:rotate(-1.5deg);margin:-10px -20px 0;position:relative;z-index:4}
+.marquee.alt{background:var(--paper-3);color:var(--graphite);transform:rotate(1.2deg)}
+.track{display:flex;width:max-content;animation:slide 32s linear infinite}
+.marquee.alt .track{animation-direction:reverse}
+.track span{font-family:var(--display);font-size:34px;text-transform:uppercase;letter-spacing:.03em;padding:0 26px;display:flex;align-items:center;gap:52px;white-space:nowrap}
+.track span::after{content:"✦";font-size:22px}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* ABOUT */
+.about .wrap{display:block}
+.about .wrap>div{max-width:820px}
+.about-visual{position:relative;aspect-ratio:1/1;max-width:100%;border-radius:var(--r);background:var(--paper-2);border:1px solid var(--line);display:grid;place-items:center;overflow:hidden}
+.about-visual::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,rgba(29,31,34,.035) 0 12px,transparent 12px 24px)}
+.wheel{width:62%;color:var(--graphite);position:relative;animation:spin 60s linear infinite}
+.about-visual .tag{position:absolute;right:18px;top:26px;background:var(--graphite);color:var(--paper);font-family:var(--display);font-size:18px;padding:10px 18px;border-radius:8px;transform:rotate(-4deg);letter-spacing:.04em}
+.about-visual .addr{position:absolute;left:18px;bottom:18px;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:14px;font-weight:500}
+.about h2{font-size:clamp(46px,6vw,80px);margin:16px 0 26px}
+.about p{color:var(--steel);margin-bottom:18px;font-size:18px;max-width:60ch}
+.about p strong{color:var(--graphite);font-weight:700}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.chips span{border:1px solid var(--line);border-radius:999px;padding:9px 16px;font-size:14px}
+.chips .on{background:var(--graphite);color:var(--paper);border-color:var(--graphite);font-weight:700}
+
+/* SERVICES */
+.services{background:var(--paper-2)}
+.svc-split{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.svc-col{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:40px;display:grid;gap:20px;align-content:start;min-width:0}
+.svc-col.dark{background:var(--graphite);color:var(--paper);border-color:var(--graphite)}
+.svc-col header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.svc-col h3{font-family:var(--display);font-weight:400;font-size:clamp(36px,4vw,52px);text-transform:uppercase;line-height:1}
+.svc-col header svg{width:52px;height:52px;flex-shrink:0;opacity:.85;overflow:visible}
+.ico-scissors g{transform-box:view-box;transform-origin:24px 23px}
+.svc-col.cut .blade-a{animation:bladeA .6s ease-in-out 2}
+.svc-col.cut .blade-b{animation:bladeB .6s ease-in-out 2}
+@keyframes bladeA{50%{transform:rotate(-15deg)}}
+@keyframes bladeB{50%{transform:rotate(15deg)}}
+.m-ink{opacity:0}
+.svc-col.buzz .m-body{animation:buzz .07s linear 28}
+.svc-col.buzz .m-needle{animation:needle .05s linear 40}
+.svc-col.buzz .m-ink{animation:ink .25s steps(2) 8}
+@keyframes buzz{25%{transform:translate(.7px,-.5px)}50%{transform:translate(-.6px,.6px)}75%{transform:translate(.5px,.7px)}}
+@keyframes needle{50%{transform:translate(-2px,2px)}}
+@keyframes ink{50%{opacity:1}}
+.svc-col>p{color:var(--steel)}
+.svc-col.dark>p{color:var(--silver)}
+.list{display:grid}
+.list div{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding-block:14px;border-bottom:1px dashed var(--line);font-size:16.5px}
+.svc-col.dark .list div{border-bottom-color:rgba(255,255,255,.16)}
+.list b{font-weight:500}
+.list span{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--ash);white-space:nowrap}
+.svc-col.dark .list span{color:var(--silver)}
+.note{font-size:14px;color:var(--ash)}
+
+/* PROMO */
+.promo{padding-block:0}
+.promo-card{position:relative;border-radius:28px;overflow:hidden;padding:64px 60px;background:var(--graphite);color:var(--paper);display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.promo-card::before{content:"";position:absolute;right:-80px;top:-60px;width:420px;height:420px;border-radius:50%;border:60px solid rgba(255,255,255,.05)}
+.promo h2{font-size:clamp(44px,6vw,82px);margin:14px 0 18px}
+.promo h2 em{font-style:normal;color:var(--silver)}
+.promo p{color:var(--silver);font-size:18px;margin-bottom:30px;max-width:52ch}
+.promo .eyebrow{color:var(--silver)}
+.promo .eyebrow::before{background:var(--paper)}
+.promo .btn-light{background:var(--paper);color:var(--graphite)}
+.combo{position:relative;display:grid;gap:12px}
+.combo div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:18px 20px;display:flex;gap:14px;align-items:center}
+.combo b{font-family:var(--display);font-weight:400;font-size:22px;text-transform:uppercase;letter-spacing:.02em}
+.combo i{font-style:normal;font-family:var(--display);font-size:15px;color:var(--silver);min-width:26px}
+
+/* TEAM */
+.team-grid{display:grid;grid-template-columns:repeat(2,minmax(0,360px));gap:18px}
+.artist{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:3/3.6;max-width:100%;background:linear-gradient(160deg,var(--paper-2),var(--paper-3));border:1px solid var(--line);transition:border-color .3s,transform .3s}
+.artist:hover{border-color:var(--graphite);transform:translateY(-4px)}
+.artist .mono{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--display);font-size:clamp(70px,9vw,120px);color:var(--silver);padding-bottom:22%}
+.artist .info{position:absolute;left:20px;right:20px;bottom:18px}
+.artist h3{font-family:var(--display);font-weight:400;font-size:28px;text-transform:uppercase;line-height:1.05}
+.artist span{font-size:14px;color:var(--steel)}
+.artist.tbd .mono{font-size:clamp(50px,6vw,80px)}
+.team-note{margin-top:22px;color:var(--ash);font-size:15px}
+
+/* REVIEWS */
+.reviews{background:var(--paper-2)}
+.rev-top{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:46px}
+.rev-top .sec-head{margin-bottom:0}
+.score{display:flex;align-items:center;gap:18px}
+.score b{font-family:var(--display);font-size:96px;font-weight:400;line-height:.9}
+.score div{display:grid}
+.score i{font-style:normal;font-size:22px;letter-spacing:3px}
+.score span{font-size:14px;color:var(--ash)}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rev{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:30px;display:grid;gap:16px;align-content:space-between;min-width:0}
+.rev q{font-size:20px;line-height:1.45;font-weight:500;quotes:"“" "”"}
+.rev small{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--ash)}
+.rev-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:28px}
+.rev-tags span{font-size:13px;border:1px solid var(--line);border-radius:999px;padding:6px 12px;color:var(--steel);background:var(--paper)}
+
+/* FAQ */
+.faq .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px}
+.faq .sec-head{position:sticky;top:120px;align-self:start}
+.qa{border-bottom:1px solid var(--line)}
+.qa button{width:100%;background:none;border:0;color:var(--graphite);text-align:left;padding-block:26px;display:flex;gap:20px;align-items:center;cursor:pointer;font-family:inherit;font-size:20px;font-weight:500}
+.qa button b{margin-left:auto;font-size:26px;font-weight:400;transition:transform .3s;color:var(--ash)}
+.qa.open button b{transform:rotate(45deg)}
+.qa .ans{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.qa .ans p{padding:0 0 26px;color:var(--steel);max-width:62ch}
+
+/* CONTACT */
+.contact{background:var(--paper-2)}
+.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
+.book{background:var(--graphite);color:var(--paper);border-radius:24px;padding:46px;min-width:0}
+.book h2{font-size:clamp(40px,5vw,64px);margin:10px 0 8px}
+.book .eyebrow{color:var(--silver)}
+.book .eyebrow::before{background:var(--paper)}
+.book>p{color:var(--silver);margin-bottom:28px}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form label{display:grid;gap:6px;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;min-width:0}
+.form .full{grid-column:1/-1}
+.form input,.form select,.form textarea{font:inherit;font-size:16px;padding:14px 16px;border-radius:12px;border:1.5px solid #4a4e54;background:#26292d;color:var(--paper);text-transform:none;letter-spacing:0;font-weight:400;width:100%;color-scheme:dark}
+.form input:focus,.form select:focus,.form textarea:focus{outline:none;border-color:var(--paper)}
+.form textarea{min-height:110px;resize:vertical}
+.form .btn{justify-content:center;width:100%;grid-column:1/-1;padding:18px;background:var(--paper);color:var(--graphite)}
+.form-note{grid-column:1/-1;font-size:13px;color:var(--silver);text-align:center}
+.form-ok{grid-column:1/-1;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:14px 16px;font-size:15px}
+.info-col{display:grid;gap:24px;align-content:start;min-width:0}
+.card{background:var(--paper);border-radius:24px;padding:34px;border:1px solid var(--line)}
+.card h3{font-family:var(--display);font-weight:400;font-size:26px;text-transform:uppercase;margin-bottom:18px;letter-spacing:.02em}
+.hours{display:grid;gap:10px;font-variant-numeric:tabular-nums}
+.hours div{display:flex;justify-content:space-between;gap:12px;border-bottom:1px dashed var(--line);padding-bottom:10px;font-size:16px}
+.hours div span:last-child{font-weight:700}
+.hours div.closed span:last-child{color:var(--ash);font-weight:500}
+.hours div.today{background:var(--graphite);color:var(--paper);margin-inline:-12px;padding:9px 12px;border-radius:10px;border-bottom-color:transparent}
+.hours div.today span:last-child{color:var(--paper)}
+.hours .hoy{display:inline-block;margin-left:8px;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:var(--paper);color:var(--graphite);border-radius:999px;padding:1px 8px;vertical-align:2px}
+.open-now{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px;padding:6px 12px;border-radius:999px;background:var(--paper-2)}
+.open-now::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--ash)}
+.open-now.yes::before{background:#2fa866;box-shadow:0 0 0 4px rgba(47,168,102,.2)}
+.contact-list{display:grid;gap:16px}
+.contact-list a,.contact-list div{display:flex;gap:14px;align-items:flex-start;font-size:16px}
+.contact-list svg{width:22px;height:22px;flex-shrink:0;color:var(--steel);margin-top:2px}
+.contact-list a:hover{text-decoration:underline}
+.copy{margin-left:auto;background:var(--paper-2);border:1px solid var(--line);border-radius:999px;font:inherit;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;cursor:pointer;color:var(--graphite)}
+.map{position:relative;border-radius:24px;overflow:hidden;margin-top:24px;min-height:280px;border:1px solid var(--line);background:var(--paper);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;padding:30px 20px}
+.map::before{content:"";position:absolute;inset:0;background:
+  linear-gradient(90deg,transparent 49.6%,var(--paper-3) 49.6% 50.4%,transparent 50.4%),
+  linear-gradient(0deg,transparent 49.6%,var(--paper-3) 49.6% 50.4%,transparent 50.4%),
+  repeating-linear-gradient(0deg,transparent 0 46px,var(--paper-2) 46px 48px),
+  repeating-linear-gradient(90deg,transparent 0 46px,var(--paper-2) 46px 48px)}
+.map>*{position:relative}
+.map .pin{width:46px;height:46px;border-radius:50% 50% 50% 0;background:var(--graphite);transform:rotate(-45deg);display:grid;place-items:center}
+.map .pin::after{content:"";width:16px;height:16px;border-radius:50%;background:var(--paper)}
+.map b{font-family:var(--display);font-weight:400;font-size:clamp(26px,4vw,40px);text-transform:uppercase}
+.map span{color:var(--steel)}
+
+/* FOOTER */
+footer{padding-block:90px 36px;position:relative;overflow:hidden}
+.foot-big{font-family:var(--display);font-size:clamp(70px,16vw,240px);line-height:.85;text-transform:uppercase;color:transparent;-webkit-text-stroke:1.5px var(--silver);white-space:nowrap;margin-bottom:60px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding-bottom:50px;border-bottom:1px solid var(--line)}
+.foot-grid h4{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--ash);margin-bottom:16px}
+.foot-grid ul{list-style:none;display:grid;gap:9px;color:var(--steel)}
+.foot-grid a:hover{color:var(--graphite)}
+.foot-grid .slogan{font-family:var(--display);font-size:34px;text-transform:uppercase;line-height:1}
+.foot-bottom{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:26px;font-size:14px;color:var(--ash)}
+
+.wa-float{position:fixed;right:calc(20px + env(safe-area-inset-right,0px));bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:60;width:62px;height:62px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 12px 30px rgba(29,31,34,.3);transition:transform .2s}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:32px;height:32px;color:#fff}
+
+/* RESPONSIVE */
+@media (max-width:1080px){
+  .nav-links{display:none}
+  .burger{display:block}
+  .nav-links.show{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--paper);padding:24px max(16px,env(safe-area-inset-left,0px));border-bottom:1px solid var(--line);gap:18px;font-size:18px}
+}
+@media (max-width:900px){
+  section{padding-block:80px}
+  .hero .wrap,.about .wrap,.faq .wrap,.contact-grid,.svc-split,.promo-card{grid-template-columns:1fr}
+  .pole-stage{height:460px}
+  .pole{height:360px}
+  .faq .sec-head{position:static}
+  .about-visual{max-width:480px;width:100%}
+  .rev-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .promo-card{padding:44px 28px}
+}
+@media (max-width:600px){
+  .brand img{height:46px}
+  body{font-size:16px}
+  .nav .btn-dark{display:none}
+  .team-grid{grid-template-columns:1fr 1fr;gap:12px}
+  .team-grid .artist{aspect-ratio:3/3.8}
+  .artist h3{font-size:22px}
+  .pole-stage{height:400px}
+  .pole{height:300px;width:96px}
+  .cap{width:122px}
+  .badge{width:116px;height:116px}.badge b{font-size:15px}
+  .stars-chip{left:0;top:4%}
+  .svc-col{padding:30px 22px}
+  .form{grid-template-columns:1fr}
+  .book{padding:30px 22px}
+  .card{padding:26px 22px}
+  .track span{font-size:24px;gap:36px}
+  .foot-grid{grid-template-columns:1fr}
+  .qa button{font-size:17px}
+  .score b{font-size:72px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="draft" data-es="Propuesta de diseño · Borrador" data-en="Design proposal · Draft">Propuesta de diseño · Borrador</div>
+  <div class="wrap">
+    <a href="#inicio" class="brand"><img src="data:image/jpeg;base64,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" alt="Logo de Dharma Barber &amp; Tattoo" width="76" height="60"><div><span>DHARMA</span><small>BARBER &amp; TATTOO</small></div></a>
+    <nav class="nav-links" id="links">
+      <a href="#estudio" data-es="Estudio" data-en="Studio">Estudio</a>
+      <a href="#servicios" data-es="Servicios" data-en="Services">Servicios</a>
+      <a href="#equipo" data-es="Equipo" data-en="Team">Equipo</a>
+      <a href="#opiniones" data-es="Opiniones" data-en="Reviews">Opiniones</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang"><button class="on" data-lang="es" type="button">ES</button><button data-lang="en" type="button">EN</button></div>
+      <a href="#contacto" class="btn btn-dark" data-es="Pide cita" data-en="Book now">Pide cita</a>
+      <button class="burger" id="burger" type="button" aria-label="Menú"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow" data-es="Barbería y tatuajes · Puerto de la Cruz" data-en="Barber &amp; tattoo · Puerto de la Cruz">Barbería y tatuajes · Puerto de la Cruz</span>
+      <h1 class="display" style="margin-top:20px"><span data-es="Corte, barba" data-en="Cuts, beard">Corte, barba</span><em data-es="y tinta" data-en="&amp; ink">y tinta</em></h1>
+      <span class="script">Barber &amp; Tattoo Studio</span>
+      <p data-es="Un mismo sitio para salir con el pelo y la barba como los quieres y para hacerte ese tatuaje que llevas tiempo pensando. Trato cercano, buen ambiente y mucho detalle, en la calle El Peñón." data-en="One place to get your hair and beard exactly how you want them, and the tattoo you've been thinking about for a while. Friendly service, good vibes and real attention to detail, on Calle El Peñón.">Un mismo sitio para salir con el pelo y la barba como los quieres y para hacerte ese tatuaje que llevas tiempo pensando. Trato cercano, buen ambiente y mucho detalle, en la calle El Peñón.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-dark wa-link" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.1c-.2.6-1.3 1.2-1.8 1.3-.5.1-1 .1-1.7-.1a15 15 0 0 1-5.9-5.2c-.7-1-1.2-2.2-1.2-3.3 0-1.1.6-1.7.9-2 .2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4Z"/></svg><span data-es="Pide cita por WhatsApp" data-en="Book via WhatsApp">Pide cita por WhatsApp</span></a>
+        <a href="#servicios" class="btn btn-ghost" data-es="Ver servicios" data-en="See services">Ver servicios</a>
+      </div>
+      <div class="hero-meta">
+        <div><b>5.0 ★</b><span data-es="66 opiniones en Google" data-en="66 Google reviews">66 opiniones en Google</span></div>
+        <div><b>L–V</b><span data-es="Abierto entre semana" data-en="Open weekdays">Abierto entre semana</span></div>
+        <div><b>2 EN 1</b><span data-es="Barbería + tattoo" data-en="Barber + tattoo">Barbería + tattoo</span></div>
+      </div>
+    </div>
+    <div class="pole-stage" aria-hidden="true">
+      <div class="stars-chip"><b>5.0</b> <i>★★★★★</i><span>Google · 66</span></div>
+      <div class="pole"><div class="cap"></div><div class="glass"></div><div class="cap bot"></div></div>
+      <a class="badge" href="#contacto" tabindex="-1">
+        <svg class="ring" viewBox="0 0 156 156"><defs><path id="c" d="M78,78 m-60,0 a60,60 0 1,1 120,0 a60,60 0 1,1 -120,0"/></defs><text fill="currentColor" font-family="DM Sans" font-weight="700" font-size="11.5" letter-spacing="3"><textPath href="#c" textLength="372" lengthAdjust="spacing">BARBER ✦ TATTOO ✦ PUERTO DE LA CRUZ ✦ </textPath></text></svg>
+        <div><b>DHARMA</b></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ABOUT -->
+<section class="about" id="estudio">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow" data-es="El estudio" data-en="The studio">El estudio</span>
+      <h2 class="display" data-es="Tu sitio de confianza en el Puerto" data-en="Your go-to spot in the Puerto">Tu sitio de confianza en el Puerto</h2>
+      <p data-es="Dharma es una <strong>barbería y estudio de tatuajes</strong> en <strong>Puerto de la Cruz</strong>, a un paso del casco. Aquí se viene a cortarse el pelo, a arreglarse la barba o a tatuarse, y sobre todo a echar un buen rato." data-en="Dharma is a <strong>barbershop and tattoo studio</strong> in <strong>Puerto de la Cruz</strong>, just off the old town. People come here for a haircut, a beard trim or a tattoo, and above all for a good time.">Dharma es una <strong>barbería y estudio de tatuajes</strong> en <strong>Puerto de la Cruz</strong>, a un paso del casco. Aquí se viene a cortarse el pelo, a arreglarse la barba o a tatuarse, y sobre todo a echar un buen rato.</p>
+      <p data-es="Escuchamos lo que buscas antes de empezar y cuidamos el acabado hasta el último detalle. Por eso nuestros clientes repiten y nos dan un 5 de 5 en Google." data-en="We listen to what you're after before we start and take care of the finish down to the last detail. That's why our clients keep coming back and rate us 5 out of 5 on Google.">Escuchamos lo que buscas antes de empezar y cuidamos el acabado hasta el último detalle. Por eso nuestros clientes repiten y nos dan un 5 de 5 en Google.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="servicios">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="display" data-es="Nuestros servicios" data-en="Our services">Nuestros servicios</h2>
+      <p data-es="Ven a por un corte rápido entre semana o reserva una sesión de tatuaje con calma. Te asesoramos en los dos." data-en="Drop in for a quick weekday cut or book a relaxed tattoo session. We'll advise you on both.">Ven a por un corte rápido entre semana o reserva una sesión de tatuaje con calma. Te asesoramos en los dos.</p>
+    </div>
+    <div class="svc-split">
+      <div class="svc-col">
+        <header>
+          <h3 data-es="Barbería" data-en="Barbershop">Barbería</h3>
+          <svg class="ico-scissors" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><g class="blade-a"><circle cx="13" cy="37" r="6"/><path d="M17 33 36 6"/></g><g class="blade-b"><circle cx="35" cy="37" r="6"/><path d="M31 33 12 6"/></g><circle cx="24" cy="23" r="1.6" fill="currentColor" stroke="none"/></svg>
+        </header>
+        <p data-es="Cortes clásicos y modernos, degradados, barba y afeitado." data-en="Classic and modern cuts, fades, beard work and shaves.">Cortes clásicos y modernos, degradados, barba y afeitado.</p>
+        <div class="list">
+          <div><b data-es="Corte de pelo" data-en="Haircut">Corte de pelo</b><span>14 €</span></div>
+          <div><b data-es="Corte + barba" data-en="Cut + beard">Corte + barba</b><span>20 €</span></div>
+        </div>
+      </div>
+      <div class="svc-col dark">
+        <header>
+          <h3 data-es="Tatuajes" data-en="Tattoos">Tatuajes</h3>
+          <svg class="ico-machine" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><g class="m-body"><path d="M14 34l18-18 6 6-18 18-6-6ZM28 12l8-8 8 8-8 8"/><path class="m-needle" d="M8 40l6-6"/></g><g class="m-ink" stroke-width="1.8"><path d="M3 38l2 1M6 44l1-2M2 43l2-.5"/></g></svg>
+        </header>
+        <div class="list">
+          <div><b data-es="Diseño personalizado" data-en="Custom design">Diseño personalizado</b><span data-es="Consulta gratis" data-en="Free consult">Consulta gratis</span></div>
+          <div><b data-es="Tattoo pequeño / fine line" data-en="Small / fine line">Tattoo pequeño / fine line</b><span data-es="Desde · a confirmar" data-en="From · TBC">Desde · a confirmar</span></div>
+          <div><b data-es="Piezas medianas y grandes" data-en="Medium &amp; large pieces">Piezas medianas y grandes</b><span data-es="Por sesión" data-en="Per session">Por sesión</span></div>
+          <div><b data-es="Cover-up y retoques" data-en="Cover-ups &amp; touch-ups">Cover-up y retoques</b><span data-es="Valoración previa" data-en="Assessment first">Valoración previa</span></div>
+        </div>
+        <p class="note" data-es="Mándanos tu idea y la zona del cuerpo y te damos presupuesto." data-en="Send us your idea and placement and we'll give you a quote.">Mándanos tu idea y la zona del cuerpo y te damos presupuesto.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="team" id="equipo">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow" data-es="El equipo" data-en="The team">El equipo</span>
+      <h2 class="display" data-es="Manos de confianza" data-en="Trusted hands">Manos de confianza</h2>
+    </div>
+    <div class="team-grid">
+      <a class="artist" href="https://www.instagram.com/rickybarber23/" target="_blank" rel="noopener" aria-label="Instagram de Ricky: rickybarber23"><div class="mono">R</div><div class="info"><h3>Ricky</h3><span><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-2px;margin-right:5px" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>rickybarber23</span></div></a>
+      <a class="artist" href="https://www.instagram.com/ayozetattoer/" target="_blank" rel="noopener" aria-label="Instagram de Ayoze: ayozetattoer"><div class="mono">A</div><div class="info"><h3>Ayoze</h3><span><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-2px;margin-right:5px" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>ayozetattoer</span></div></a>
+    </div>
+  </div>
+</section>
+
+
+<!-- REVIEWS -->
+<section class="reviews" id="opiniones">
+  <div class="wrap">
+    <div class="rev-top">
+      <div class="sec-head">
+        <span class="eyebrow" data-es="Lo que dicen" data-en="What people say">Lo que dicen</span>
+        <h2 class="display" data-es="Clientes que repiten" data-en="Clients who come back">Clientes que repiten</h2>
+      </div>
+      <div class="score"><b>5.0</b><div><i>★★★★★</i><span data-es="66 opiniones en Google" data-en="66 reviews on Google">66 opiniones en Google</span></div></div>
+    </div>
+    <div class="rev-grid">
+      <div class="rev"><q>Atento a cómo quieres el corte, buen trato conmigo y mi hijo, recomendable 100%</q><small data-es="Opinión en Google" data-en="Google review">Opinión en Google</small></div>
+      <div class="rev"><q>Buen rollo y buen ambiente</q><small data-es="Opinión en Google" data-en="Google review">Opinión en Google</small></div>
+      <div class="rev"><q>Llevo tiempo cortándome el pelo con Ricky y no puedo estar más contento.</q><small data-es="Opinión en Google" data-en="Google review">Opinión en Google</small></div>
+    </div>
+    <div class="rev-tags">
+      <span data-es="ambiente · 6" data-en="vibe · 6">ambiente · 6</span>
+      <span data-es="manos · 5" data-en="skill · 5">manos · 5</span>
+      <span data-es="confianza · 4" data-en="trust · 4">confianza · 4</span>
+      <span data-es="detalle" data-en="detail">detalle</span>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow" data-es="Dudas" data-en="Questions">Dudas</span>
+      <h2 class="display" data-es="Preguntas frecuentes" data-en="FAQ">Preguntas frecuentes</h2>
+      <p data-es="¿No ves tu pregunta? Escríbenos por WhatsApp y te contestamos." data-en="Can't see your question? Message us on WhatsApp.">¿No ves tu pregunta? Escríbenos por WhatsApp y te contestamos.</p>
+    </div>
+    <div id="faqList"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contacto">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="book">
+        <span class="eyebrow" data-es="Reserva" data-en="Booking">Reserva</span>
+        <h2 class="display" data-es="Pide tu cita" data-en="Book your slot">Pide tu cita</h2>
+        <p data-es="Rellena el formulario y se abrirá WhatsApp con tu mensaje listo para enviar." data-en="Fill in the form and WhatsApp will open with your message ready to send.">Rellena el formulario y se abrirá WhatsApp con tu mensaje listo para enviar.</p>
+        <form class="form" id="bookForm" novalidate>
+          <label><span data-es="Nombre" data-en="Name">Nombre</span><input id="f-name" required autocomplete="name"></label>
+          <label><span data-es="Teléfono" data-en="Phone">Teléfono</span><input id="f-phone" type="tel" autocomplete="tel"></label>
+          <label><span data-es="Servicio" data-en="Service">Servicio</span>
+            <select id="f-svc">
+              <option data-es="Corte de pelo" data-en="Haircut">Corte de pelo</option>
+              <option data-es="Barba" data-en="Beard">Barba</option>
+              <option data-es="Corte + barba" data-en="Cut + beard">Corte + barba</option>
+              <option data-es="Tatuaje" data-en="Tattoo">Tatuaje</option>
+            </select></label>
+          <label><span data-es="Día preferido" data-en="Preferred day">Día preferido</span><input id="f-date" type="date"></label>
+          <label class="full"><span data-es="Cuéntanos (idea del tatuaje, tipo de corte…)" data-en="Tell us (tattoo idea, type of cut…)">Cuéntanos (idea del tatuaje, tipo de corte…)</span><textarea id="f-msg"></textarea></label>
+          <button class="btn" type="submit" data-es="Enviar por WhatsApp" data-en="Send via WhatsApp">Enviar por WhatsApp</button>
+          <p class="form-note" data-es="Te confirmamos la hora por WhatsApp." data-en="We'll confirm your time on WhatsApp.">Te confirmamos la hora por WhatsApp.</p>
+          <div class="form-ok" id="formOk" hidden></div>
+        </form>
+      </div>
+      <div class="info-col">
+        <div class="card">
+          <h3 data-es="Horario" data-en="Opening hours">Horario</h3>
+          <div class="open-now" id="openNow">—</div>
+          <div class="hours" id="hours"></div>
+        </div>
+        <div class="card">
+          <h3 data-es="Contacto" data-en="Contact">Contacto</h3>
+          <div class="contact-list">
+            <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.3 7-12a7 7 0 1 0-14 0c0 5.7 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>C. el Peñón, 7<br>38400 Puerto de la Cruz, Tenerife</span></div>
+            <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg><span id="phoneTxt">671 92 42 04</span><button class="copy" id="copyPhone" type="button" data-es="Copiar" data-en="Copy">Copiar</button></div>
+            <a class="wa-link" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Z"/></svg><span>WhatsApp</span></a>
+            <a href="https://cut.yeasyapp.com/qGQX2c" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><span data-es="Reserva online (Yeasy) ↗" data-en="Online booking (Yeasy) ↗">Reserva online (Yeasy) ↗</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="map" href="https://maps.app.goo.gl/FswksEmpNnjswnWQ8" target="_blank" rel="noopener">
+      <div class="pin"></div>
+      <b>C. el Peñón, 7</b>
+      <span data-es="Puerto de la Cruz · Abrir en Google Maps ↗" data-en="Puerto de la Cruz · Open in Google Maps ↗">Puerto de la Cruz · Abrir en Google Maps ↗</span>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-big">Dharma Barber</div>
+    <div class="foot-grid">
+      <div><p class="slogan" data-es="Corte, barba y tinta" data-en="Cuts, beard &amp; ink">Corte, barba y tinta</p></div>
+      <div><h4 data-es="Visítanos" data-en="Visit us">Visítanos</h4><ul><li>C. el Peñón, 7</li><li>38400 Puerto de la Cruz</li><li>Tenerife</li></ul></div>
+      <div><h4 data-es="Horario" data-en="Hours">Horario</h4><ul><li data-es="Lun – Vie" data-en="Mon – Fri">Lun – Vie</li><li data-es="Sáb y dom cerrado" data-en="Sat &amp; Sun closed">Sáb y dom cerrado</li></ul></div>
+      <div><h4 data-es="Secciones" data-en="Sections">Secciones</h4><ul><li><a href="#servicios" data-es="Servicios" data-en="Services">Servicios</a></li><li><a href="#opiniones" data-es="Opiniones" data-en="Reviews">Opiniones</a></li><li><a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a></li></ul></div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 Dharma Barber &amp; Tattoo Studio</span><span data-es="Aviso legal · Privacidad · Cookies" data-en="Legal notice · Privacy · Cookies">Aviso legal · Privacidad · Cookies</span></div>
+  </div>
+</footer>
+
+<a class="wa-float wa-link" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.1c-.2.6-1.3 1.2-1.8 1.3-.5.1-1 .1-1.7-.1a15 15 0 0 1-5.9-5.2c-.7-1-1.2-2.2-1.2-3.3 0-1.1.6-1.7.9-2 .2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4Z"/></svg></a>
+
+<script>
+(function(){
+  const WA='34671924204';
+  let lang='es';
+  const T={
+    es:{waMsg:'Hola Dharma, quería pedir cita.',open:'Abierto ahora',closed:'Cerrado ahora',days:['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'],closedTxt:'Cerrado',
+      m1:['Barbería','Tatuajes','Degradados','Barba','Fine line','Puerto de la Cruz'],m2:['5.0 en Google','Buen rollo','Trato cercano','Detalle','Diseño propio'],
+      sent:'Tu mensaje está preparado en WhatsApp. Si no se ha abierto, escríbenos al 671 92 42 04.',need:'Escribe tu nombre para continuar.',copied:'Copiado',
+      faq:[['¿Hace falta cita?','Para la barbería puedes reservar online o por WhatsApp; si pasas sin cita te atendemos en cuanto haya hueco. Para tatuajes, siempre con cita.'],
+           ['¿Cómo pido presupuesto de un tatuaje?','Mándanos por WhatsApp tu idea, alguna referencia, el tamaño aproximado y la zona del cuerpo. Te respondemos con presupuesto y fecha.'],
+           ['¿Hacéis diseños personalizados?','Sí. Dibujamos el diseño a partir de tu idea y lo ajustamos contigo antes de tatuar.'],
+           ['¿Qué cuidados necesita un tatuaje nuevo?','Te explicamos los cuidados al terminar y te damos las pautas por escrito. Ante cualquier duda, escríbenos.']]},
+    en:{waMsg:'Hi Dharma, I would like to book an appointment.',open:'Open now',closed:'Closed now',days:['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],closedTxt:'Closed',
+      m1:['Barbershop','Tattoos','Fades','Beard','Fine line','Puerto de la Cruz'],m2:['5.0 on Google','Good vibes','Friendly','Detail','Custom designs'],
+      sent:'Your message is ready in WhatsApp. If it didn\'t open, message us on +34 671 92 42 04.',need:'Enter your name to continue.',copied:'Copied',
+      faq:[['Do I need an appointment?','For the barbershop you can book online or on WhatsApp; walk-ins are seen as soon as there is a free slot. Tattoos are by appointment only.'],
+           ['How do I get a tattoo quote?','Send us your idea on WhatsApp with a reference, rough size and placement. We will reply with a quote and a date.'],
+           ['Do you do custom designs?','Yes. We draw the design from your idea and fine-tune it with you before tattooing.'],
+           ['How do I care for a new tattoo?','We explain aftercare when we finish and give you written instructions. Any questions, just message us.']]}
+  };
+  // [open, close] in minutes; index = getDay()
+  const H=[null,[600,1020],[600,1020],[540,780],[570,1110],[570,1140],null];
+  const fmt=m=>String(Math.floor(m/60)).padStart(2,'0')+':'+String(m%60).padStart(2,'0');
+
+  function setWa(text){
+    const url='https://wa.me/'+WA+'?text='+encodeURIComponent(text||T[lang].waMsg);
+    document.querySelectorAll('.wa-link').forEach(a=>a.href=url);
+  }
+  function marquee(id,words){
+    const el=document.getElementById(id);
+    if(!el)return;
+    const row=words.map(w=>'<span>'+w+'</span>').join('');
+    el.innerHTML=row+row+row+row;
+  }
+  function faq(){
+    const box=document.getElementById('faqList');
+    box.innerHTML=T[lang].faq.map((q,i)=>'<div class="qa"><button type="button" aria-expanded="false" id="qa'+i+'"><span>'+q[0]+'</span><b>+</b></button><div class="ans"><p>'+q[1]+'</p></div></div>').join('');
+    box.querySelectorAll('.qa button').forEach(b=>b.addEventListener('click',()=>{
+      const qa=b.parentElement,ans=qa.querySelector('.ans'),on=!qa.classList.contains('open');
+      qa.classList.toggle('open',on);b.setAttribute('aria-expanded',on);
+      ans.style.maxHeight=on?ans.scrollHeight+'px':'0';
+    }));
+  }
+  function hours(){
+    const now=new Date(new Date().toLocaleString('en-US',{timeZone:'Atlantic/Canary'}));
+    const d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+    const order=[1,2,3,4,5,6,0];
+    document.getElementById('hours').innerHTML=order.map(i=>{
+      const h=H[i];
+      return '<div class="'+(h?'':'closed ')+(i===d?'today':'')+'"><span>'+T[lang].days[i]+'</span><span>'+(h?fmt(h[0])+' – '+fmt(h[1]):T[lang].closedTxt)+'</span></div>';
+    }).join('');
+    const h=H[d],open=h&&m>=h[0]&&m<h[1];
+    const el=document.getElementById('openNow');
+    let extra='';
+    if(open){extra=(lang==='es'?' · cierra a las ':' · closes at ')+fmt(h[1])}
+    else{
+      for(let k=0;k<8;k++){
+        const dd=(d+k)%7,hh=H[dd];
+        if(!hh||(k===0&&m>=hh[0]))continue;
+        const when=k===0?(lang==='es'?'hoy':'today'):k===1?(lang==='es'?'mañana':'tomorrow'):T[lang].days[dd].toLowerCase();
+        extra=(lang==='es'?' · abre '+when+' a las ':' · opens '+when+' at ')+fmt(hh[0]);break;
+      }
+    }
+    el.textContent=(open?T[lang].open:T[lang].closed)+extra;el.classList.toggle('yes',!!open);
+  }
+  setInterval(()=>hours(),60000);
+  function apply(l){
+    lang=l;document.documentElement.lang=l;
+    document.querySelectorAll('[data-'+l+']').forEach(e=>e.innerHTML=e.getAttribute('data-'+l));
+    document.querySelectorAll('.lang button').forEach(b=>b.classList.toggle('on',b.dataset.lang===l));
+    marquee('m1',T[l].m1);marquee('m2',T[l].m2);faq();hours();setWa();
+    try{localStorage.setItem('dharma-lang',l)}catch(e){}
+  }
+  document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>apply(b.dataset.lang)));
+  let start='es';try{start=localStorage.getItem('dharma-lang')||'es'}catch(e){}
+  apply(start);
+
+  const nav=document.getElementById('nav');
+  const onScroll=()=>nav.classList.toggle('solid',scrollY>30);onScroll();
+  addEventListener('scroll',onScroll,{passive:true});
+  const links=document.getElementById('links');
+  document.getElementById('burger').addEventListener('click',()=>links.classList.toggle('show'));
+  links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('show')));
+
+  function playOnce(col,cls){
+    if(!col||col.classList.contains(cls))return;
+    col.classList.add(cls);
+    setTimeout(()=>col.classList.remove(cls),cls==='buzz'?2000:1200);
+  }
+  const cols=document.querySelectorAll('.svc-col');
+  [[cols[0],'cut'],[cols[1],'buzz']].forEach(([c,cls])=>{
+    if(!c)return;
+    c.addEventListener('mouseenter',()=>playOnce(c,cls));
+    c.addEventListener('touchstart',()=>playOnce(c,cls),{passive:true});
+  });
+
+  document.getElementById('copyPhone').addEventListener('click',e=>{
+    const b=e.currentTarget,txt='+34 671 92 42 04';
+    const done=()=>{const o=b.textContent;b.textContent=T[lang].copied;setTimeout(()=>b.textContent=o,1400)};
+    try{navigator.clipboard.writeText(txt).then(done).catch(()=>{selectPhone()})}catch(err){selectPhone()}
+  });
+  function selectPhone(){const r=document.createRange();r.selectNodeContents(document.getElementById('phoneTxt'));const s=getSelection();s.removeAllRanges();s.addRange(r)}
+
+  document.getElementById('bookForm').addEventListener('submit',e=>{
+    e.preventDefault();
+    const ok=document.getElementById('formOk');
+    const name=document.getElementById('f-name').value.trim();
+    if(!name){ok.hidden=false;ok.textContent=T[lang].need;document.getElementById('f-name').focus();return}
+    const phone=document.getElementById('f-phone').value.trim(),svc=document.getElementById('f-svc').value,date=document.getElementById('f-date').value,msg=document.getElementById('f-msg').value.trim();
+    const lines=lang==='es'
+      ?['Hola Dharma, soy '+name+'.','Quiero pedir cita para: '+svc+'.',date?'Día preferido: '+date+'.':'',phone?'Mi teléfono: '+phone+'.':'',msg]
+      :['Hi Dharma, this is '+name+'.','I would like to book: '+svc+'.',date?'Preferred day: '+date+'.':'',phone?'My phone: '+phone+'.':'',msg];
+    const url='https://wa.me/'+WA+'?text='+encodeURIComponent(lines.filter(Boolean).join('\n'));
+    const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();
+    ok.hidden=false;ok.textContent=T[lang].sent;
+  });
+})();
+</script>
+
+</body>
+</html>
